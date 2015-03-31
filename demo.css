@@ -1,0 +1,83 @@
+/*
+	Calculator - Plain JS
+	adamkaczmarek.pl
+*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext);
+
+html,body {
+	margin:0px;
+	padding:0px;
+}
+.container {
+	width:90%;
+	margin:0 auto;
+	perspective:600px;
+}
+
+#calculator {
+	transform:rotateX(10deg);
+	width:300px;
+	margin:0 auto;
+	margin-top:200px;
+	padding:20px;
+	background-color:#3498db;
+	box-shadow:0px 5px 1px #2980b9, 0px 20px 15px #CCCCCC;
+	border-radius:5px;
+	transition:all 0.2s ease-out;
+}
+#calculator:hover {
+	transform:rotateX(0deg) ;
+	background-color:#09C;
+}
+.cpjsBtn {
+	width:60px;
+	margin:7px;
+	line-height:30px;
+	font-size:15px;
+	font-weight:bold;
+	border:none;
+	border-radius:5px;
+	background-color:#ecf0f1;
+	box-shadow:0px 5px 1px #2980b9;
+	transition:all 0.2s ease;
+	outline:none;
+	color:#666;
+}
+.cpjsBtn:hover {
+	cursor:pointer;
+}
+
+.cpjsBtn:active {
+	transform:translateY(2px);
+	box-shadow:0px 0px 1px #2980b9;
+}
+
+#cpjsDisplay {
+	text-align:right;
+	border:none;
+	border-radius:5px;
+	background-color:#ecf0f1;
+	width:210px;
+	margin:5px;
+	font-size:20px;
+	font-family:Open Sans;
+	line-height:20px;
+	height:50px;
+	border-top:solid 2px #0066CC;
+}
+
+[data-cpjsType="C"] {
+	background-color:#EF4836;
+	color:#ecf0f1;
+	width:135px;
+}
+
+[data-cpjsType="="] {
+	background-color: #C8F7C5;
+}
+
+
+	
+	
+
+
